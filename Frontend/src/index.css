@@ -156,16 +156,24 @@ button {
   color: #020617;
 }
 
+.project-description {
+  display: -webkit-box;
+  min-height: 3rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .project-stage {
   max-width: 90rem;
 }
 
 .portfolio-swiper {
-  padding: 1rem 0 4.4rem;
+  padding: 0.25rem 0 2.75rem;
 }
 
 .project-slide {
-  width: min(82vw, 760px);
+  width: min(86vw, 620px);
   opacity: 0.38;
   transform: scale(0.86);
   transition: opacity 260ms ease, transform 260ms ease, filter 260ms ease;
@@ -174,7 +182,7 @@ button {
 
 .project-slide.swiper-slide-active {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1.02);
   filter: saturate(1) blur(0);
 }
 
@@ -224,6 +232,8 @@ button {
   }
 
   .project-slide {
-    width: 88vw;
+    width: 92vw;
   }
 }
+
+
