@@ -14,8 +14,8 @@ export const Projects = () => (
   <section id="projects" className="section-shell project-stage">
     <SectionHeading
       eyebrow="Featured Projects"
-      title="An Apple-style carousel for the work that matters."
-      text="One project stays centered and enlarged while neighboring cards peek in, inviting exploration with arrows, dots, autoplay, and wheel gestures."
+title="Projects that reflect my journey as a developer."
+text="A collection of applications built to solve real-world problems, improve user experiences, and strengthen my skills across the MERN stack."
     />
     <div className="relative">
       <button
@@ -45,7 +45,7 @@ export const Projects = () => (
           slideShadows: false,
         }}
         mousewheel={{ forceToAxis: true, sensitivity: 0.8 }}
-        autoplay={{ delay: 3800, disableOnInteraction: false }}
+        autoplay={{ delay: 10000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation={{ prevEl: ".project-prev", nextEl: ".project-next" }}
         className="portfolio-swiper"
@@ -53,7 +53,13 @@ export const Projects = () => (
         {projects.map((project) => (
           <SwiperSlide key={project.title} className="project-slide">
             <article className="rounded-[1.6rem] border border-white/12 bg-white/[0.065] p-4 shadow-[0_24px_90px_rgba(0,0,0,0.45)] backdrop-blur-2xl sm:p-6">
-              <ProjectMockup project={project} />
+              <div className="overflow-hidden rounded-[1.4rem] border border-white/12">
+  <img
+  src={project.image}
+  alt={project.title}
+  className="max-h-[60vh] w-full object-contain rounded-2xl"
+/>
+</div>
               <div className="px-1 pt-6">
                 <h3 className="text-2xl font-semibold text-white sm:text-3xl">
                   {project.title}

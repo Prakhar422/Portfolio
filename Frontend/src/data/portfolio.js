@@ -6,12 +6,24 @@ import {
   FaReact,
 } from "react-icons/fa";
 import {
+  SiBootstrap,
   SiExpress,
   SiGit,
   SiJavascript,
   SiMongodb,
+  SiPostman,
+  SiRender,
   SiTailwindcss,
+  SiVercel,
+  SiC,
+  SiCplusplus,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import prepSphere from "../assets/Project/prepSphere.png";
+import careerConnect from "../assets/Project/careerConnect.png";
+import tripManagement from "../assets/Project/tripManagement.png";
+import aiChatbot from "../assets/Project/aiChatbot.png";
+import libraryManagement from "../assets/Project/libraryManagement.png";
 
 export const stats = [
   { value: "12+", label: "Projects Completed" },
@@ -21,57 +33,96 @@ export const stats = [
 ];
 
 export const skills = [
-  { name: "React", icon: FaReact, color: "from-cyan-300 to-blue-500" },
-  { name: "Node.js", icon: FaNodeJs, color: "from-emerald-300 to-green-500" },
-  { name: "Express.js", icon: SiExpress, color: "from-zinc-200 to-zinc-500" },
-  { name: "MongoDB", icon: SiMongodb, color: "from-green-300 to-emerald-600" },
+  { name: "C", icon: SiC, color: "from-blue-300 to-blue-600" },
+  { name: "C++", icon: SiCplusplus, color: "from-indigo-300 to-blue-700" },
   { name: "JavaScript", icon: SiJavascript, color: "from-yellow-200 to-amber-500" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "from-sky-300 to-cyan-500" },
   { name: "HTML", icon: FaHtml5, color: "from-orange-300 to-red-500" },
   { name: "CSS", icon: FaCss3Alt, color: "from-blue-300 to-indigo-500" },
+  { name: "React", icon: FaReact, color: "from-cyan-300 to-blue-500" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "from-sky-300 to-cyan-500" },
+  { name: "Node.js", icon: FaNodeJs, color: "from-emerald-300 to-green-500" },
+  { name: "Express.js", icon: SiExpress, color: "from-zinc-200 to-zinc-500" },
+  { name: "REST API", icon: TbApi, color: "from-cyan-200 to-blue-600" },
+  { name: "MongoDB", icon: SiMongodb, color: "from-green-300 to-emerald-600" },
   { name: "Git", icon: SiGit, color: "from-red-300 to-orange-500" },
   { name: "GitHub", icon: FaGithub, color: "from-white to-slate-400" },
+  { name: "Postman", icon: SiPostman, color: "from-orange-300 to-orange-600" },
+  { name: "Vercel", icon: SiVercel, color: "from-white to-slate-500" },
+  
 ];
 
 export const projects = [
   {
-    title: "CareerConnect",
+    image: prepSphere,
+    title: "PrepSphere AI",
     description:
-      "A MERN job and career platform experience focused on profile discovery, opportunity tracking, and clean candidate workflows.",
-    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
-    github: "https://github.com/prakhargarg/careerconnect",
-    live: "#",
+      "An AI-powered placement preparation platform that offers coding practice, aptitude practice, mock interviews, and resume analysis to help students prepare for their dream careers.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "Groq API", "Gemini API"],
+    github: "https://github.com/Prakhar422/PrepSphere-AI",
+    live: "https://prep-sphere-ai.vercel.app/",
     accent: "from-cyan-400 via-blue-500 to-violet-500",
-    panels: ["Jobs", "Profiles", "Applications"],
+    panels: ["Coding", "Aptitude", "Interviews"],
   },
   {
+  image: careerConnect,
+  title: "CareerConnect",
+  description:
+    "A full-stack job and internship portal that enables students to discover opportunities, apply for jobs, and allows recruiters to manage postings and applications through a dedicated dashboard.",
+  stack: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Tailwind",
+    "Clerk",
+    "Cloudinary"
+  ],
+  github: "https://github.com/Prakhar422/CareerConnect",
+  live: "https://career-connect-client-rho.vercel.app/",
+  accent: "from-blue-400 via-cyan-500 to-violet-500",
+  panels: ["Jobs", "Recruiters", "Applications"],
+},
+  {
+    image: tripManagement,
     title: "Trip Management System",
     description:
       "A responsive travel operations dashboard for planning trips, organizing itineraries, and managing bookings from one interface.",
-    stack: ["React", "JavaScript", "CSS", "MongoDB"],
-    github: "https://github.com/prakhargarg/trip-management-system",
-    live: "#",
+    stack: ["React", "JavaScript", "CSS"],
+    github: "https://github.com/Prakhar422/React-Trip-Management-SEP-2025-166",
+    live: "https://trip-management-red.vercel.app/",
     accent: "from-blue-300 via-fuchsia-500 to-purple-500",
-    panels: ["Routes", "Hotels", "Budget"],
+    panels: ["Trip", "Budget", "Planning"],
   },
   {
-    title: "AI Chatbot",
-    description:
-      "A polished conversational interface with prompt-first UX, chat history presentation, and quick response patterns for users.",
-    stack: ["React", "Node.js", "Express", "JavaScript"],
-    github: "https://github.com/prakhargarg/ai-chatbot",
-    live: "#",
-    accent: "from-violet-300 via-cyan-400 to-blue-600",
-    panels: ["Prompt", "Memory", "Response"],
-  },
+  image: aiChatbot,
+  title: "AI Chatbot",
+  description:
+    "An AI-powered chatbot that generates intelligent responses using the Gemini API, featuring a clean conversational interface and responsive design built with HTML, CSS, and JavaScript.",
+  stack: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Gemini API"
+  ],
+  github: "https://github.com/Prakhar422/ai-chatbot",
+  live: "#",
+  accent: "from-violet-300 via-cyan-400 to-blue-600",
+  panels: ["Chat", "Prompts", "Responses"],
+},
   {
-    title: "Library Management System",
-    description:
-      "A library workflow app for catalog management, student records, issue tracking, and simple administrative visibility.",
-    stack: ["HTML", "CSS", "JavaScript", "MongoDB"],
-    github: "https://github.com/prakhargarg/library-management-system",
-    live: "#",
-    accent: "from-indigo-300 via-blue-500 to-cyan-400",
-    panels: ["Catalog", "Members", "Issued"],
-  },
+  image: libraryManagement,
+  title: "Library Management System",
+  description:
+    "A frontend-only library management system developed for Jabalpur Engineering College, featuring user authentication, book renewal requests, fine payment handling, and profile management through a responsive interface.",
+  stack: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "GitHub Pages"
+  ],
+  github: "https://github.com/Prakhar422/Library-Management-System",
+  live: "https://prakhar422.github.io/Library-Management-System/",
+  accent: "from-indigo-300 via-blue-500 to-cyan-400",
+  panels: ["Login", "Book Renewal", "Fine Payment"],
+},
 ];
