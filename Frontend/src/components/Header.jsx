@@ -52,7 +52,7 @@ export const Header = () => {
           href="#home"
           className="text-sm font-bold uppercase tracking-[0.32em] text-white"
         >
-          PG
+            {"<PG>"}
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
