@@ -37,7 +37,7 @@ export const Hero = () => (
          experiences.
       </p>
       <div className="mt-9 flex flex-wrap gap-4">
-        <GlowButton href="#projects">View Projects</GlowButton>
+        <GlowButton href="#projects">Explore Projects</GlowButton>
         <GlowButton href={contact.resume} variant="secondary" download>
           <FiDownload className="mr-2" />
           Download Resume

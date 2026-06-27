@@ -22,7 +22,7 @@ export const Contact = () => {
       <SectionHeading
         eyebrow="Contact"
         title="Have an idea, role, or project?"
-        text="Send a message from the frontend form. It opens your mail client, so there is no backend, database, or API involved."
+        text="Whether you have an opportunity, a project idea, or just want to say hello, I'd love to hear from you."
       />
       <Reveal>
         <GlassCard className="mx-auto max-w-3xl p-6 sm:p-8">

@@ -12,14 +12,14 @@ export const About = () => (
 />
     <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
       <Reveal>
-        <GlassCard className="h-full p-7 sm:p-9">
-          <p className="text-lg leading-9 text-slate-200">
+        <GlassCard className="h-full p-6 sm:p-9">
+          <p className="text-lg leading-8 text-slate-200">
   Hi, I'm Prakhar Garg, a B.Tech IT graduate from Jabalpur Engineering College 
   and a MERN Stack Developer passionate about building modern, user-centric 
   web applications.
   </p>
-          <p className="mt-6 text-base leading-8 text-slate-400">
-  My expertise lies in React, Node.js, Express, and MongoDB, along with
+          <p className="mt-5 text-base leading-7 text-slate-400">
+  My expertise lies in React, Node.js, Express and MongoDB, along with
   modern frontend technologies like Tailwind CSS. I love transforming ideas
   into production-ready applications and continuously improving my skills
   through hands-on projects and new challenges.

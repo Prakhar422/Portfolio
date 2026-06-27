@@ -24,9 +24,10 @@ import careerConnect from "../assets/Project/careerConnect.png";
 import tripManagement from "../assets/Project/tripManagement.png";
 import aiChatbot from "../assets/Project/aiChatbot.png";
 import libraryManagement from "../assets/Project/libraryManagement.png";
+import currencyConverter from "../assets/Project/currencyConvertor.png";
 
 export const stats = [
-  { value: "12+", label: "Projects Completed" },
+  { value: "10+", label: "Projects Completed" },
   { value: "10+", label: "Technologies Learned" },
   { value: "1 mo", label: "Internship Experience" },
   { value: "7.2", label: "Current CGPA" },
@@ -105,9 +106,25 @@ export const projects = [
     "Gemini API"
   ],
   github: "https://github.com/Prakhar422/ai-chatbot",
-  live: "#",
+  live: null,
   accent: "from-violet-300 via-cyan-400 to-blue-600",
   panels: ["Chat", "Prompts", "Responses"],
+},
+{
+  image: currencyConverter,
+  title: "Currency Converter",
+  description:
+    "A responsive currency converter application built with React that enables users to convert between multiple currencies in real time through a clean and intuitive interface.",
+  stack: [
+    "React",
+    "JavaScript",
+    "Tailwind",
+    "Exchange Rate API"
+  ],
+  github: "https://github.com/Prakhar422/Currency_Convertor",
+  live: "https://your-currency-converter-link.vercel.app/",
+  accent: "from-emerald-300 via-cyan-400 to-blue-500",
+  panels: ["Currencies", "Exchange Rates", "Conversion"],
 },
   {
   image: libraryManagement,

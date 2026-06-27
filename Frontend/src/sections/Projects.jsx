@@ -86,12 +86,16 @@ text="A collection of applications built to solve real-world problems, improve u
                   >
                     <FaGithub /> GitHub
                   </a>
-                  <a
-                    href={project.live}
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
-                  >
-                    <FiExternalLink /> Live Demo
-                  </a>
+                  {project.live && (
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 backdrop-blur-md transition hover:bg-cyan-300 hover:text-slate-950"
+  >
+    <FiExternalLink /> Live Demo
+  </a>
+)}
                 </div>
               </div>
             </article>
