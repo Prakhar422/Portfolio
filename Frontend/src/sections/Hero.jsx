@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { FiDownload, FiMail } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import portrait from "../assets/prakhar1.png";
+import portrait from "../assets/prakhar_updated.png";
 import { contact } from "../constants/site";
-import { GlowButton } from "../components/GlowButton";
+import { GlowButton } from "../components/ui/GlowButton";
 
 const socialLinks = [
   { label: "GitHub", href: contact.github, icon: FaGithub },
@@ -33,8 +33,8 @@ export const Hero = () => (
       </div>
       <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
         I build fast, responsive, and user-focused web applications using React,
-         Node.js, Express, and MongoDB, turning ideas into seamless digital 
-         experiences.
+        Node.js, Express, and MongoDB, turning ideas into seamless digital
+        experiences.
       </p>
       <div className="mt-9 flex flex-wrap gap-4">
         <GlowButton href="#projects">Explore Projects</GlowButton>
@@ -81,7 +81,7 @@ export const Hero = () => (
         alt="Futuristic developer portrait"
         className="absolute inset-5 h-[calc(100%-2.5rem)] w-[calc(100%-2.5rem)] rounded-full border border-white/15 object-cover shadow-[0_0_70px_rgba(59,130,246,0.32)]"
       />
-      <div className="absolute -bottom-5 left-1/2 w-[82%] -translate-x-1/2 rounded-full border border-white/12 bg-white/10 px-5 py-3 text-center text-sm text-cyan-50 backdrop-blur-xl">
+      <div className="absolute -bottom-5 left-1/2 w-[82%] -translate-x-1/2 rounded-full border border-white/12 bg-white/10 px-5 py-3 text-center text-sm text-cyan-5 backdrop-blur-xl">
         Open to MERN developer roles
       </div>
     </motion.div>

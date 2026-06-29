@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SectionHeading } from "../components/SectionHeading";
+import { SectionHeading } from "../components/common/SectionHeading";
 import { skills } from "../data/portfolio";
 
 export const Skills = () => (

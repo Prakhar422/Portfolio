@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FiMail, FiSend } from "react-icons/fi";
-import { GlassCard } from "../components/GlassCard";
-import { Reveal } from "../components/Reveal";
-import { SectionHeading } from "../components/SectionHeading";
+import { GlassCard } from "../components/ui/GlassCard";
+import { Reveal } from "../components/ui/Reveal";
+import { SectionHeading } from "../components/common/SectionHeading";
 import { contact } from "../constants/site";
 
 export const Contact = () => {

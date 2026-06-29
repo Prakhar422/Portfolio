@@ -1,4 +1,4 @@
-import { Reveal } from "./Reveal";
+import { Reveal } from "../ui/Reveal";
 
 export const SectionHeading = ({ eyebrow, title, text }) => (
   <Reveal className="mx-auto mb-12 max-w-3xl text-center">

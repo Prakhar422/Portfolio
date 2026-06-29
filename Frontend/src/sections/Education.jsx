@@ -1,7 +1,7 @@
 import { FaGraduationCap } from "react-icons/fa";
-import { GlassCard } from "../components/GlassCard";
-import { Reveal } from "../components/Reveal";
-import { SectionHeading } from "../components/SectionHeading";
+import { GlassCard } from "../components/ui/GlassCard";
+import { Reveal } from "../components/ui/Reveal";
+import { SectionHeading } from "../components/common/SectionHeading";
 
 export const Education = () => (
   <section id="education" className="section-shell">
@@ -26,14 +26,13 @@ export const Education = () => (
             Jabalpur Engineering College
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-  <span className="inline-flex rounded-full border border-white/12 bg-white/8 px-4 py-2 text-sm text-white">
-    CGPA: 7.2
-  </span>
-
-  <span className="inline-flex rounded-full border border-cyan-200/20 bg-cyan-200/8 px-4 py-2 text-sm text-cyan-100">
-    Graduated 2026
-  </span>
-</div>
+            <span className="inline-flex rounded-full border border-white/12 bg-white/8 px-4 py-2 text-sm text-white">
+              CGPA: 7.2
+            </span>
+            <span className="inline-flex rounded-full border border-cyan-200/20 bg-cyan-200/8 px-4 py-2 text-sm text-cyan-100">
+              Graduated 2026
+            </span>
+          </div>
         </div>
       </GlassCard>
     </Reveal>

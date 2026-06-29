@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { FiBriefcase } from "react-icons/fi";
-import { GlassCard } from "../components/GlassCard";
-import { Reveal } from "../components/Reveal";
-import { SectionHeading } from "../components/SectionHeading";
+import { GlassCard } from "../components/ui/GlassCard";
+import { Reveal } from "../components/ui/Reveal";
+import { SectionHeading } from "../components/common/SectionHeading";
 
 export const Experience = () => (
   <section id="experience" className="section-shell">
@@ -33,9 +33,6 @@ export const Experience = () => (
                 React Developer Intern
               </h3>
               <p className="mt-2 text-slate-300">Badkul Technology Pvt. Ltd.</p>
-              {/* <p className="mt-1 text-sm text-cyan-200">
-  Sep 2025 • 1 Month Internship
-</p> */}
               <ul className="mt-5 space-y-3 text-slate-400">
                 <li>
                   • Developed responsive React interfaces and reusable

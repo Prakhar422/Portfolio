@@ -161,29 +161,55 @@ button {
   min-height: 3rem;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
 }
 
 .project-stage {
   max-width: 90rem;
+  padding-top: 4.25rem;
+  padding-bottom: 3rem;
+}
+
+.project-stage > div:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-swiper,
+.swiper,
+.swiper-wrapper,
+.project-stage {
+  overflow: visible !important;
 }
 
 .portfolio-swiper {
-  padding: 0.25rem 0 2.75rem;
+  padding: 0.1rem 0 6rem;
 }
 
 .project-slide {
-  width: min(86vw, 620px);
-  opacity: 0.38;
+  width: 480px !important;
+  opacity: 0.45;
   transform: scale(0.86);
   transition: opacity 260ms ease, transform 260ms ease, filter 260ms ease;
-  filter: saturate(0.78) blur(0.6px);
+  filter: saturate(0.85);
 }
 
 .project-slide.swiper-slide-active {
   opacity: 1;
-  transform: scale(1.02);
-  filter: saturate(1) blur(0);
+  transform: scale(1.03);
+  filter: none;
+}
+
+.project-slide.swiper-slide-active article {
+  box-shadow:
+    0 0 30px rgba(34, 211, 238, 0.15),
+    0 25px 80px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-swiper .swiper-pagination {
+  position: relative;
+  bottom: auto !important;
+  margin-top: 1.5rem;
 }
 
 .portfolio-swiper .swiper-pagination-bullet {
@@ -232,8 +258,6 @@ button {
   }
 
   .project-slide {
-    width: 92vw;
+    width: 85vw !important;
   }
 }
-
-

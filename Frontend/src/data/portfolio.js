@@ -87,8 +87,8 @@ export const projects = [
     image: tripManagement,
     title: "Trip Management System",
     description:
-      "A responsive travel operations dashboard for planning trips, organizing itineraries, and managing bookings from one interface.",
-    stack: ["React", "JavaScript", "CSS"],
+  "A responsive travel management system that allows users to create, view, update, and delete trip details such as destinations, itineraries, durations, and budgets through a dashboard.",
+      stack: ["React", "JavaScript", "Tailwind"],
     github: "https://github.com/Prakhar422/React-Trip-Management-SEP-2025-166",
     live: "https://trip-management-red.vercel.app/",
     accent: "from-blue-300 via-fuchsia-500 to-purple-500",
@@ -130,7 +130,7 @@ export const projects = [
   image: libraryManagement,
   title: "Library Management System",
   description:
-    "A frontend-only library management system developed for Jabalpur Engineering College, featuring user authentication, book renewal requests, fine payment handling, and profile management through a responsive interface.",
+    "A frontend-only library management system developed for Jabalpur Engineering College, featuring user authentication, book renewal requests and profile management through a responsive interface.",
   stack: [
     "HTML",
     "CSS",

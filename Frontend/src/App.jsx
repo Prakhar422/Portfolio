@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { CursorGlow } from "./components/CursorGlow";
-import { Header } from "./components/Header";
-import { Particles } from "./components/Particles";
+import { CursorGlow } from "./components/ui/CursorGlow";
+import { Header } from "./components/common/Header";
+import { Particles } from "./components/ui/Particles";
 import { useLenis } from "./hooks/useLenis";
 import { About } from "./sections/About";
 import { Contact } from "./sections/Contact";

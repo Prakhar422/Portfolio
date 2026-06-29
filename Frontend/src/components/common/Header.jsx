@@ -1,38 +1,38 @@
-import { motion } from "framer-motion";
-import { navItems } from "../constants/site";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { navItems } from "../../constants/site";
 
 export const Header = () => {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-  if (window.scrollY < 200) {
-    setActiveSection("");
-    return;
-  }
+      if (window.scrollY < 200) {
+        setActiveSection("");
+        return;
+      }
 
-  const sections = [
-    "about",
-    "skills",
-    "projects",
-    "experience",
-    "education",
-    "contact",
-  ];
+      const sections = [
+        "about",
+        "skills",
+        "projects",
+        "experience",
+        "education",
+        "contact",
+      ];
 
-  for (const id of sections) {
-    const section = document.getElementById(id);
-    if (!section) continue;
+      for (const id of sections) {
+        const section = document.getElementById(id);
+        if (!section) continue;
 
-    const rect = section.getBoundingClientRect();
+        const rect = section.getBoundingClientRect();
 
-    if (rect.top <= 150 && rect.bottom >= 150) {
-      setActiveSection(`#${id}`);
-      break;
-    }
-  }
-};
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          setActiveSection(`#${id}`);
+          break;
+        }
+      }
+    };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
@@ -52,7 +52,7 @@ export const Header = () => {
           href="#home"
           className="text-sm font-bold uppercase tracking-[0.32em] text-white"
         >
-            {"<PG>"}
+          {"<PG>"}
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
