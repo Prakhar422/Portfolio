@@ -11,6 +11,7 @@ import { Footer } from "./sections/Footer";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { Skills } from "./sections/Skills";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
   useLenis();
@@ -37,6 +38,7 @@ const App = () => {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </motion.div>
   );
 };

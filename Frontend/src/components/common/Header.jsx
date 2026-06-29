@@ -5,10 +5,28 @@ import { navItems } from "../../constants/site";
 export const Header = () => {
   const [activeSection, setActiveSection] = useState("");
 
+  const handleNavClick = (event, href) => {
+    event.preventDefault();
+    const targetId = href === "/" ? "home" : href.substring(1);
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      window.history.replaceState(null, "", href);
+      setActiveSection(href);
+    } else if (href === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.history.replaceState(null, "", "/");
+      setActiveSection("");
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY < 200) {
         setActiveSection("");
+        if (window.location.pathname !== "/") {
+          window.history.replaceState(null, "", "/");
+        }
         return;
       }
 
@@ -28,7 +46,11 @@ export const Header = () => {
         const rect = section.getBoundingClientRect();
 
         if (rect.top <= 150 && rect.bottom >= 150) {
-          setActiveSection(`#${id}`);
+          const path = `/${id}`;
+          setActiveSection(path);
+          if (window.location.pathname !== path) {
+            window.history.replaceState(null, "", path);
+          }
           break;
         }
       }
@@ -49,7 +71,8 @@ export const Header = () => {
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a
-          href="#home"
+          href="/"
+          onClick={(e) => handleNavClick(e, "/")}
           className="text-sm font-bold uppercase tracking-[0.32em] text-white"
         >
           {"<PG>"}
@@ -60,6 +83,7 @@ export const Header = () => {
             <a
               key={item.href}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className={`relative text-sm transition-colors duration-300
                 after:absolute after:-bottom-2 after:left-0
                 after:h-[2px] after:bg-cyan-300 after:rounded-full
@@ -76,7 +100,8 @@ export const Header = () => {
         </div>
 
         <a
-          href="#contact"
+          href="/contact"
+          onClick={(e) => handleNavClick(e, "/contact")}
           className="rounded-full border border-cyan-200/30 px-4 py-2 text-xs font-semibold text-cyan-100 shadow-[0_0_22px_rgba(34,211,238,0.16)] transition hover:bg-cyan-200 hover:text-slate-950"
         >
           Hire Me
