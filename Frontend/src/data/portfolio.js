@@ -30,7 +30,7 @@ export const stats = [
   { value: "10+", label: "Projects Completed" },
   { value: "10+", label: "Technologies Learned" },
   { value: "1 mo", label: "Internship Experience" },
-  { value: "7.2", label: "Current CGPA" },
+  { value: "7.2", label: "CGPA" },
 ];
 
 export const skills = [
