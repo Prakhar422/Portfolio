@@ -29,7 +29,7 @@ import currencyConverter from "../assets/Project/currencyConvertor.png";
 export const stats = [
   { value: "10+", label: "Projects Completed" },
   { value: "10+", label: "Technologies Learned" },
-  { value: "1 mo", label: "Internship Experience" },
+  { value: "3 mo", label: "Internship Experience" },
   { value: "7.2", label: "CGPA" },
 ];
 

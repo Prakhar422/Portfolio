@@ -51,7 +51,7 @@ export const Experience = () => (
                 </li>
               </ul>
               <a
-                href="/certificates/InternshipCompletionLetter.pdf"
+                href="/certificates/Prakhar_Garg_Completion_Letter.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-2 rounded-full border border-cyan-200/30 bg-cyan-200/10 px-5 py-2 text-sm font-medium text-cyan-100 transition hover:bg-cyan-200 hover:text-slate-950"
