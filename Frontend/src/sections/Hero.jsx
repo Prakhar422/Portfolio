@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { FiDownload, FiMail } from "react-icons/fi";
+import { FiDownload, FiMail, FiEye } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import portrait from "../assets/prakhar_updated.png";
 import { contact } from "../constants/site";
 import { GlowButton } from "../components/ui/GlowButton";
+
 
 const socialLinks = [
   { label: "GitHub", href: contact.github, icon: FaGithub },
@@ -50,10 +51,15 @@ export const Hero = () => (
         >
           Explore Projects
         </GlowButton>
-        <GlowButton href={contact.resume} variant="secondary" download>
-          <FiDownload className="mr-2" />
-          Download Resume
-        </GlowButton>
+        <GlowButton
+  href={contact.resume}
+  variant="secondary"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FiEye className="mr-2" />
+  View Resume
+</GlowButton>
       </div>
       <div className="mt-9 flex gap-4">
         {socialLinks.map((item) => {

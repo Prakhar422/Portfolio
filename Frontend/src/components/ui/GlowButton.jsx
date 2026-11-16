@@ -1,4 +1,12 @@
-export const GlowButton = ({ href, children, variant = "primary", download, onClick }) => {
+export const GlowButton = ({
+  href,
+  children,
+  variant = "primary",
+  download,
+  onClick,
+  target,
+  rel,
+}) => {
   const isPrimary = variant === "primary";
 
   return (
@@ -6,6 +14,8 @@ export const GlowButton = ({ href, children, variant = "primary", download, onCl
       href={href}
       download={download}
       onClick={onClick}
+      target={target}
+      rel={rel}
       className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition duration-300 ${
         isPrimary
           ? "bg-cyan-300 text-slate-950 shadow-[0_0_32px_rgba(34,211,238,0.45)] hover:bg-white"
