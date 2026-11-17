@@ -79,7 +79,7 @@ export const Experience = () => (
             </p>
 
             <h3 className="mt-3 text-2xl font-semibold text-white">
-              Frontend Developer
+              Web Developer
             </h3>
 
             <p className="mt-2 text-slate-300">
@@ -92,16 +92,16 @@ export const Experience = () => (
 
             <ul className="mt-5 space-y-3 text-slate-400">
               <li>
-    • Contributed to frontend development of the ViaAstro web application.
+    • Contributed to the development of the ViaAstro web application.
   </li>
   <li>
-    • Worked on website interfaces and existing UI components.
+    • Worked on website interfaces and backend components.
   </li>
   <li>
-    • Assisted with frontend updates based on project requirements.
+    • Assisted with frontend and backend updates based on requirements.
   </li>
   <li>
-    • Improved application usability through frontend refinements.
+    • Improved application usability through code refinements.
   </li>
             </ul>
 
